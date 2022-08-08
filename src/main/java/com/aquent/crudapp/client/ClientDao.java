@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ClientDao {
+public interface ClientDao{
 
    
     List<Client> listClient();
@@ -18,6 +18,6 @@ public interface ClientDao {
     void updateClient(Client client);
 
 
-    
+
     void deleteClient(Integer id);
 }

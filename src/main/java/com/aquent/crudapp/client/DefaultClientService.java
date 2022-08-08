@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class DefaultClientService implements ClientService {
 
+    
     private final ClientDao clientDao;
     private final Validator validator;
 
