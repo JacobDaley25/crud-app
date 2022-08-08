@@ -10,9 +10,7 @@ import javax.validation.Validator;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-/**
- * Default implementation of {@link ClientService}.
- */
+
 @Component
 public class DefaultClientService implements ClientService {
 
