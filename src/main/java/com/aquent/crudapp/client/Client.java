@@ -23,6 +23,10 @@ public class Client {
     @Size(min = 1, max = 50, message = "Street Address is required with a max of 50 characters")
     private String mailingAddress;
 
+    @NotNull
+    @Size(min = 1, max = 50, message="Associated Contact is required with a max of 30 characters")
+    private String associatedContact;
+
     public Integer getClientId() {
         return clientId;
     }
@@ -55,4 +59,10 @@ public class Client {
         this.mailingAddress = mailingAddress;
     }
 
+    public String getAssocaitedContact(String associatedContact){
+        return associatedContact;
+    }
+    public void setAssocaitedContact(String associatedContact){
+        this.associatedContact = associatedContact;
+    }
 }
